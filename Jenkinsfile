@@ -5,7 +5,6 @@ pipeline {
     environment {
         IMAGE_NAME = "smartcraze/jenkins-node-app"
     }
-
     stages {
         stage('Build Docker Image') {
             steps {
@@ -42,7 +41,6 @@ pipeline {
         success {
             echo 'Pipeline completed successfully'
         }
-
         failure {
             echo 'Pipeline failed'
         }
