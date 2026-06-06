@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Run Container') {
             steps {
-                sh 'docker run -p 3000:3000 --rm $IMAGE_NAME'
+                sh 'docker run -p 3000:3000 --rm  -d $IMAGE_NAME'
             }
         }
     }
